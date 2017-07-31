@@ -61,6 +61,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930k/ramdisk/lib/modules/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930k/ramdisk/sbin
 # owner: 1000
 # group: 1000
@@ -96,6 +103,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: g930k/ramdisk/sbin/resetprop
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g930k/ramdisk/sbin/healthd
 # owner: 1000
 # group: 1000
@@ -110,6 +124,20 @@ user::rwx
 group::r-x
 other::---
 
+# file: g930k/ramdisk/sbin/wakelock.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
+# file: g930k/ramdisk/sbin/sysinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g930k/ramdisk/sbin/dm_verity_signature_checker
 # owner: 1000
 # group: 1000
@@ -123,6 +151,13 @@ other::---
 user::rwx
 group::r-x
 other::---
+
+# file: g930k/ramdisk/sbin/kernelinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
 
 # file: g930k/ramdisk/init.gps.rc
 # owner: 1000
@@ -180,6 +215,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930k/ramdisk/system/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930k/ramdisk/init.zygote32.rc
 # owner: 1000
 # group: 1000
@@ -222,6 +264,13 @@ user::rwx
 group::rwx
 other::---
 
+# file: g930k/ramdisk/cache/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930k/ramdisk/sepolicy
 # owner: 1000
 # group: 1000
@@ -235,6 +284,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930k/ramdisk/mnt/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930k/ramdisk/init.usb.rc
 # owner: 1000
@@ -250,12 +306,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: g930k/ramdisk/init.services.rc
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::---
+
 # file: g930k/ramdisk/acct
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930k/ramdisk/acct/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930k/ramdisk/init.goldfish.rc
 # owner: 1000
@@ -278,12 +348,26 @@ user::rwx
 group::rwx
 other::--x
 
+# file: g930k/ramdisk/data/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930k/ramdisk/dev
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930k/ramdisk/dev/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930k/ramdisk/postrecovery.do
 # owner: 1000
@@ -312,6 +396,13 @@ other::---
 user::rwx
 group::---
 other::---
+
+# file: g930k/ramdisk/config/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930k/ramdisk/init.samsungexynos8890.rc
 # owner: 1000
@@ -376,6 +467,13 @@ user::rwx
 group::r-x
 other::--x
 
+# file: g930k/ramdisk/storage/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930k/ramdisk/ueventd.rc
 # owner: 1000
 # group: 1000
@@ -390,6 +488,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930k/ramdisk/sys/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930k/ramdisk/ueventd.goldfish.rc
 # owner: 1000
 # group: 1000
@@ -403,6 +508,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930k/ramdisk/proc/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930k/ramdisk/property_contexts
 # owner: 1000
@@ -481,6 +593,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930l/ramdisk/lib/modules/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930l/ramdisk/sbin
 # owner: 1000
 # group: 1000
@@ -516,6 +635,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: g930l/ramdisk/sbin/resetprop
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g930l/ramdisk/sbin/healthd
 # owner: 1000
 # group: 1000
@@ -530,6 +656,20 @@ user::rwx
 group::r-x
 other::---
 
+# file: g930l/ramdisk/sbin/wakelock.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
+# file: g930l/ramdisk/sbin/sysinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g930l/ramdisk/sbin/dm_verity_signature_checker
 # owner: 1000
 # group: 1000
@@ -543,6 +683,13 @@ other::---
 user::rwx
 group::r-x
 other::---
+
+# file: g930l/ramdisk/sbin/kernelinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
 
 # file: g930l/ramdisk/init.gps.rc
 # owner: 1000
@@ -607,6 +754,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930l/ramdisk/system/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930l/ramdisk/init.zygote32.rc
 # owner: 1000
 # group: 1000
@@ -649,6 +803,13 @@ user::rwx
 group::rwx
 other::---
 
+# file: g930l/ramdisk/cache/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930l/ramdisk/sepolicy
 # owner: 1000
 # group: 1000
@@ -662,6 +823,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930l/ramdisk/mnt/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930l/ramdisk/init.usb.rc
 # owner: 1000
@@ -677,12 +845,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: g930l/ramdisk/init.services.rc
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::---
+
 # file: g930l/ramdisk/acct
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930l/ramdisk/acct/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930l/ramdisk/init.goldfish.rc
 # owner: 1000
@@ -705,12 +887,26 @@ user::rwx
 group::rwx
 other::--x
 
+# file: g930l/ramdisk/data/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930l/ramdisk/dev
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930l/ramdisk/dev/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930l/ramdisk/postrecovery.do
 # owner: 1000
@@ -739,6 +935,13 @@ other::---
 user::rwx
 group::---
 other::---
+
+# file: g930l/ramdisk/config/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930l/ramdisk/init.samsungexynos8890.rc
 # owner: 1000
@@ -803,6 +1006,13 @@ user::rwx
 group::r-x
 other::--x
 
+# file: g930l/ramdisk/storage/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930l/ramdisk/ueventd.rc
 # owner: 1000
 # group: 1000
@@ -817,6 +1027,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930l/ramdisk/sys/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930l/ramdisk/ueventd.goldfish.rc
 # owner: 1000
 # group: 1000
@@ -830,6 +1047,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930l/ramdisk/proc/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930l/ramdisk/property_contexts
 # owner: 1000
@@ -908,6 +1132,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930s/ramdisk/lib/modules/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930s/ramdisk/sbin
 # owner: 1000
 # group: 1000
@@ -943,6 +1174,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: g930s/ramdisk/sbin/resetprop
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g930s/ramdisk/sbin/healthd
 # owner: 1000
 # group: 1000
@@ -957,6 +1195,20 @@ user::rwx
 group::r-x
 other::---
 
+# file: g930s/ramdisk/sbin/wakelock.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
+# file: g930s/ramdisk/sbin/sysinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g930s/ramdisk/sbin/dm_verity_signature_checker
 # owner: 1000
 # group: 1000
@@ -970,6 +1222,13 @@ other::---
 user::rwx
 group::r-x
 other::---
+
+# file: g930s/ramdisk/sbin/kernelinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
 
 # file: g930s/ramdisk/init.gps.rc
 # owner: 1000
@@ -1034,6 +1293,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930s/ramdisk/system/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930s/ramdisk/init.zygote32.rc
 # owner: 1000
 # group: 1000
@@ -1076,6 +1342,13 @@ user::rwx
 group::rwx
 other::---
 
+# file: g930s/ramdisk/cache/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930s/ramdisk/sepolicy
 # owner: 1000
 # group: 1000
@@ -1089,6 +1362,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930s/ramdisk/mnt/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930s/ramdisk/init.usb.rc
 # owner: 1000
@@ -1104,12 +1384,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: g930s/ramdisk/init.services.rc
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::---
+
 # file: g930s/ramdisk/acct
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930s/ramdisk/acct/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930s/ramdisk/init.goldfish.rc
 # owner: 1000
@@ -1132,12 +1426,26 @@ user::rwx
 group::rwx
 other::--x
 
+# file: g930s/ramdisk/data/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930s/ramdisk/dev
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930s/ramdisk/dev/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930s/ramdisk/postrecovery.do
 # owner: 1000
@@ -1166,6 +1474,13 @@ other::---
 user::rwx
 group::---
 other::---
+
+# file: g930s/ramdisk/config/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930s/ramdisk/init.samsungexynos8890.rc
 # owner: 1000
@@ -1230,6 +1545,13 @@ user::rwx
 group::r-x
 other::--x
 
+# file: g930s/ramdisk/storage/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930s/ramdisk/ueventd.rc
 # owner: 1000
 # group: 1000
@@ -1244,6 +1566,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g930s/ramdisk/sys/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g930s/ramdisk/ueventd.goldfish.rc
 # owner: 1000
 # group: 1000
@@ -1257,6 +1586,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g930s/ramdisk/proc/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g930s/ramdisk/property_contexts
 # owner: 1000
@@ -1335,6 +1671,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935k/ramdisk/lib/modules/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935k/ramdisk/sbin
 # owner: 1000
 # group: 1000
@@ -1370,6 +1713,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: g935k/ramdisk/sbin/resetprop
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g935k/ramdisk/sbin/healthd
 # owner: 1000
 # group: 1000
@@ -1384,6 +1734,20 @@ user::rwx
 group::r-x
 other::---
 
+# file: g935k/ramdisk/sbin/wakelock.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
+# file: g935k/ramdisk/sbin/sysinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g935k/ramdisk/sbin/dm_verity_signature_checker
 # owner: 1000
 # group: 1000
@@ -1397,6 +1761,13 @@ other::---
 user::rwx
 group::r-x
 other::---
+
+# file: g935k/ramdisk/sbin/kernelinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
 
 # file: g935k/ramdisk/init.gps.rc
 # owner: 1000
@@ -1454,6 +1825,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935k/ramdisk/system/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935k/ramdisk/init.zygote32.rc
 # owner: 1000
 # group: 1000
@@ -1496,6 +1874,13 @@ user::rwx
 group::rwx
 other::---
 
+# file: g935k/ramdisk/cache/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935k/ramdisk/sepolicy
 # owner: 1000
 # group: 1000
@@ -1509,6 +1894,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935k/ramdisk/mnt/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935k/ramdisk/init.usb.rc
 # owner: 1000
@@ -1524,12 +1916,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: g935k/ramdisk/init.services.rc
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::---
+
 # file: g935k/ramdisk/acct
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935k/ramdisk/acct/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935k/ramdisk/init.goldfish.rc
 # owner: 1000
@@ -1552,12 +1958,26 @@ user::rwx
 group::rwx
 other::--x
 
+# file: g935k/ramdisk/data/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935k/ramdisk/dev
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935k/ramdisk/dev/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935k/ramdisk/postrecovery.do
 # owner: 1000
@@ -1586,6 +2006,13 @@ other::---
 user::rwx
 group::---
 other::---
+
+# file: g935k/ramdisk/config/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935k/ramdisk/init.samsungexynos8890.rc
 # owner: 1000
@@ -1650,6 +2077,13 @@ user::rwx
 group::r-x
 other::--x
 
+# file: g935k/ramdisk/storage/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935k/ramdisk/ueventd.rc
 # owner: 1000
 # group: 1000
@@ -1664,6 +2098,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935k/ramdisk/sys/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935k/ramdisk/ueventd.goldfish.rc
 # owner: 1000
 # group: 1000
@@ -1677,6 +2118,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935k/ramdisk/proc/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935k/ramdisk/property_contexts
 # owner: 1000
@@ -1755,6 +2203,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935l/ramdisk/lib/modules/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935l/ramdisk/sbin
 # owner: 1000
 # group: 1000
@@ -1790,6 +2245,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: g935l/ramdisk/sbin/resetprop
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g935l/ramdisk/sbin/healthd
 # owner: 1000
 # group: 1000
@@ -1804,6 +2266,20 @@ user::rwx
 group::r-x
 other::---
 
+# file: g935l/ramdisk/sbin/wakelock.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
+# file: g935l/ramdisk/sbin/sysinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g935l/ramdisk/sbin/dm_verity_signature_checker
 # owner: 1000
 # group: 1000
@@ -1817,6 +2293,13 @@ other::---
 user::rwx
 group::r-x
 other::---
+
+# file: g935l/ramdisk/sbin/kernelinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
 
 # file: g935l/ramdisk/init.gps.rc
 # owner: 1000
@@ -1881,6 +2364,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935l/ramdisk/system/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935l/ramdisk/init.zygote32.rc
 # owner: 1000
 # group: 1000
@@ -1923,6 +2413,13 @@ user::rwx
 group::rwx
 other::---
 
+# file: g935l/ramdisk/cache/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935l/ramdisk/sepolicy
 # owner: 1000
 # group: 1000
@@ -1936,6 +2433,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935l/ramdisk/mnt/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935l/ramdisk/init.usb.rc
 # owner: 1000
@@ -1951,12 +2455,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: g935l/ramdisk/init.services.rc
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::---
+
 # file: g935l/ramdisk/acct
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935l/ramdisk/acct/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935l/ramdisk/init.goldfish.rc
 # owner: 1000
@@ -1979,12 +2497,26 @@ user::rwx
 group::rwx
 other::--x
 
+# file: g935l/ramdisk/data/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935l/ramdisk/dev
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935l/ramdisk/dev/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935l/ramdisk/postrecovery.do
 # owner: 1000
@@ -2013,6 +2545,13 @@ other::---
 user::rwx
 group::---
 other::---
+
+# file: g935l/ramdisk/config/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935l/ramdisk/init.samsungexynos8890.rc
 # owner: 1000
@@ -2077,6 +2616,13 @@ user::rwx
 group::r-x
 other::--x
 
+# file: g935l/ramdisk/storage/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935l/ramdisk/ueventd.rc
 # owner: 1000
 # group: 1000
@@ -2091,6 +2637,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935l/ramdisk/sys/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935l/ramdisk/ueventd.goldfish.rc
 # owner: 1000
 # group: 1000
@@ -2104,6 +2657,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935l/ramdisk/proc/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935l/ramdisk/property_contexts
 # owner: 1000
@@ -2182,6 +2742,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935s/ramdisk/lib/modules/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935s/ramdisk/sbin
 # owner: 1000
 # group: 1000
@@ -2217,6 +2784,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: g935s/ramdisk/sbin/resetprop
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g935s/ramdisk/sbin/healthd
 # owner: 1000
 # group: 1000
@@ -2231,6 +2805,20 @@ user::rwx
 group::r-x
 other::---
 
+# file: g935s/ramdisk/sbin/wakelock.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
+# file: g935s/ramdisk/sbin/sysinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
+
 # file: g935s/ramdisk/sbin/dm_verity_signature_checker
 # owner: 1000
 # group: 1000
@@ -2244,6 +2832,13 @@ other::---
 user::rwx
 group::r-x
 other::---
+
+# file: g935s/ramdisk/sbin/kernelinit.sh
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::r-x
 
 # file: g935s/ramdisk/init.gps.rc
 # owner: 1000
@@ -2308,6 +2903,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935s/ramdisk/system/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935s/ramdisk/init.zygote32.rc
 # owner: 1000
 # group: 1000
@@ -2350,6 +2952,13 @@ user::rwx
 group::rwx
 other::---
 
+# file: g935s/ramdisk/cache/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935s/ramdisk/sepolicy
 # owner: 1000
 # group: 1000
@@ -2363,6 +2972,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935s/ramdisk/mnt/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935s/ramdisk/init.usb.rc
 # owner: 1000
@@ -2378,12 +2994,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: g935s/ramdisk/init.services.rc
+# owner: 1000
+# group: 1000
+user::rwx
+group::r-x
+other::---
+
 # file: g935s/ramdisk/acct
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935s/ramdisk/acct/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935s/ramdisk/init.goldfish.rc
 # owner: 1000
@@ -2406,12 +3036,26 @@ user::rwx
 group::rwx
 other::--x
 
+# file: g935s/ramdisk/data/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935s/ramdisk/dev
 # owner: 1000
 # group: 1000
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935s/ramdisk/dev/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935s/ramdisk/postrecovery.do
 # owner: 1000
@@ -2440,6 +3084,13 @@ other::---
 user::rwx
 group::---
 other::---
+
+# file: g935s/ramdisk/config/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935s/ramdisk/init.samsungexynos8890.rc
 # owner: 1000
@@ -2504,6 +3155,13 @@ user::rwx
 group::r-x
 other::--x
 
+# file: g935s/ramdisk/storage/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935s/ramdisk/ueventd.rc
 # owner: 1000
 # group: 1000
@@ -2518,6 +3176,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: g935s/ramdisk/sys/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
+
 # file: g935s/ramdisk/ueventd.goldfish.rc
 # owner: 1000
 # group: 1000
@@ -2531,6 +3196,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: g935s/ramdisk/proc/.placeholder
+# owner: 1000
+# group: 1000
+user::rw-
+group::r--
+other::r--
 
 # file: g935s/ramdisk/property_contexts
 # owner: 1000
