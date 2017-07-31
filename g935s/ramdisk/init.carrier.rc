@@ -1,4 +1,27 @@
+on init
+#omr
+    mkdir /omr 0771 system system
+
 on post-fs-data
+
+# LGT contents directory
+    mkdir /data/data/com.ubivelox.wipiplayer/W 0770 system lgt_gid
+    mkdir /data/LGTContents 0770 system lgt_gid
+    mkdir /data/LGTContents/video 0770 system lgt_gid
+    mkdir /data/LGTContents/music 0770 system lgt_gid
+    mkdir /data/LGTContents/bell 0770 system lgt_gid
+    mkdir /data/LGTContents/app 0770 system lgt_gid
+    mkdir /data/LGTContents/DLtmp 0770 system lgt_gid
+    mkdir /data/LGTContents/ringforme 0770 system lgt_gid
+
+    chown system lgt_gid /data/data/com.ubivelox.wipiplayer/W
+    chown system lgt_gid /data/LGTContents
+    chown system lgt_gid /data/LGTContents/video
+    chown system lgt_gid /data/LGTContents/music
+    chown system lgt_gid /data/LGTContents/bell
+    chown system lgt_gid /data/LGTContents/app
+    chown system lgt_gid /data/LGTContents/DLtmp
+    chown system lgt_gid /data/LGTContents/ringforme
 
 # HD-DMB CAS Key Data
     mkdir /data/.dmbca 0771

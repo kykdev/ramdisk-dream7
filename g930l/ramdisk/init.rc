@@ -363,6 +363,7 @@ on load_persist_props_action
     load_persist_props
     start logd
     start logd-reinit
+    start scs
 
 # Indicate to fw loaders that the relevant mounts are up.
 on firmware_mounts_complete
@@ -450,6 +451,9 @@ on post-fs
 
     # create the lost+found directories, so as to enforce our permissions
     mkdir /cache/lost+found 0770 root root
+
+    #vpnclient
+    mkdir /data/misc/vpnclientd 0770 system system
 
 on post-fs-data
 # [ SEC_SELINUX_PORTING_COMMON
@@ -563,6 +567,9 @@ on post-fs-data
 
     mkdir /data/misc/profman 0770 system shell
 
+    #OTP
+    mkdir /data/otp 0700 system system
+	
     # NFC
     mkdir /data/nfc 0700 nfc nfc
     mkdir /data/nfc/param 0700 nfc nfc
@@ -744,6 +751,11 @@ on post-fs-data
     mkdir  /data/app_fonts 0775 system system
 
 on boot
+
+	# KNOX KAP
+    chown system system /dev/knox_kap
+    chmod 0660 /dev/knox_kap
+
     # Bluetooth permissions
     chown bluetooth net_bt_stack /dev/ttySAC1
     chmod 0660 /dev/ttySAC1
@@ -1072,6 +1084,14 @@ on boot
 
 # HMT relay mode
     chown radio system /sys/devices/virtual/relay_on
+
+# Daydream
+    setprop sys.daydream.connected 0
+    
+# KNOX_NAP
+    chmod 0660 /dev/ncm_dev
+    chown system system /dev/ncm_dev
+
 # UFS
     chown system system /sys/block/sda/device/model
     chmod 660 /sys/block/sda/device/model
@@ -1160,6 +1180,9 @@ on property:vold.decrypt=trigger_restart_min_framework
     class_start main
 
 on property:vold.decrypt=trigger_restart_framework
+    # PDP : Preload data preserve
+    pdp restore
+    pdp backup
     # mobicore
     mkdir /data/misc/mcRegistry 0775 system system
     # A/B update verifier that marks a successful boot.
@@ -1249,7 +1272,13 @@ service SIDESYNC_service /system/bin/ss_conn_daemon
 service edmaudit /system/bin/edmaudit
     class main
     user root
-    
+ 	disabled
+
+on property:security.edmaudit=true
+    start edmaudit
+
+on property:security.edmaudit=false
+    stop edmaudit
 ## WTL_EDM_END
 
 service kap_enable /sbin/knox_changer -e
@@ -1339,6 +1368,7 @@ service scs /system/bin/scs
     user system
     group system
     oneshot
+    disabled
 
 # MobiCore startup
 service mobicore /system/bin/mcDriverDaemon -r /system/app/FFFFFFFF000000000000000000000001.drbin -r /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin -r /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
@@ -1449,6 +1479,7 @@ service iod /system/bin/iod
     disabled
 
 on property:sys.boot_completed=1
+    pdp result
     start iod
 
 # icd
@@ -1487,6 +1518,16 @@ service preparefbe_ce /system/bin/preparefbe storage_ce
 service preparefbe_de /system/bin/preparefbe storage_de
     oneshot
     disabled
+
+service vpnclientd /system/bin/vpnclientd
+    socket vpnclientd seqpacket 0600 system system
+    user system
+    group system net_admin inet net_raw
+    disabled
+on property:service.vpnclientd.enable=1
+    start vpnclientd
+on property:service.vpnclientd.enable=0
+    stop vpnclientd
 
 on property:sys.sf.restart=1
     restart surfaceflinger
