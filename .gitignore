@@ -1,0 +1,10 @@
+/tmp
+/*.img
+/*.gz
+/*.zip
+/*.sh
+/*/split_img
+/*/*.img
+/*/*.gz
+/*/*.zip
+/*/*.sh
