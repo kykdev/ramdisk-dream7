@@ -5,6 +5,7 @@
 #
 
 on boot
+    write /sys/fs/selinux/enforce 0
     start kernelinit
 
 on property:sys.boot_completed=1
